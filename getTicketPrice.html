@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title></title>
+    <link type="text/css" rel=stylesheet" href=stylesheet.css">
+    <script language="javascript" type="text/javascript">
+        function myFun() {
+            var ticketPrice, cutoffAge=12;
+            age = prompt("Enter Age", "20");
+            if (age<=cutoffAge){
+                ticketPrice=10;   
+            }else{
+                ticketPrice=20;
+            }
+            document.getElementById("demo").innerHTML= ticketPrice ;
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <p id="demo">Ticket Price:</p>
+    <button type="button" onclick="myFun()">Click me</button>
+  
+</body>
+</html>
